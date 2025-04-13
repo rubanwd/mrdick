@@ -67,10 +67,44 @@
       a:hover {
         text-decoration: underline;
       }
-      .float-text-images::after {
-        content: "";
-        display: table;
-        clear: both;
+      .stories div {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 40px;
+        gap: 20px;
+      }
+
+      .stories div span {
+        width: 50%;
+      }
+
+      .stories div span.image {
+        text-align: center;
+      }
+
+      .stories div span img {
+        width: 80%;
+        height: auto;
+      }
+
+      /* 🔽 Responsive for mobile */
+      @media (max-width: 768px) {
+        .stories div {
+          flex-direction: column;
+          text-align: center;
+        }
+
+        .stories div span {
+          width: 100%;
+        }
+
+        .stories div span img {
+          width: 90%;
+        }
+        .stories div span.image {
+          order: -1;
+        }
       }
       p,
       li,
@@ -129,84 +163,68 @@
       <div class="container">
         <h2>About Mister Dick</h2>
         <p>
-          Detective Mr. Dick is not your average sleuth. In a world of crypto
-          noir, he sniffs out scams, solves mysteries, and never loses his… hat.
-          Join the hunt with DMDick – the most suspicious coin in town.
+          When the world gets more absurd by the minute — he shows up. Alone.
+          Eyeless. A legend. Mr. Dick looks at the chaos and says: “Something’s
+          off. Or maybe everything’s exactly right — which is even worse.”
+          <br />
+          Follow the Dick.
         </p>
 
         <!-- 🔽 NEW CONTENT STARTS HERE -->
-        <div class="float-text-images clearfix mt-5">
-          <!-- <img
-            src="mr_dick_loop_1.png"
-            class="float-start me-3 mb-3 img-fluid"
-            style="width: 45%"
-            alt="Left Image"
-          /> -->
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-            vehicula arcu vitae lacus commodo, a rutrum sem tincidunt. Integer
-            eu leo feugiat, rutrum odio ut, luctus sapien. Nulla facilisi.
-            <img
-              src="img/mr_dick_loop_1.png"
-              class="float-end me-2 mb-2 img-fluid"
-              style="width: 40%"
-              alt="Right Image"
-            />
-            Morbi a nulla eros. Donec in justo in elit mattis luctus. Etiam
-            gravida, libero at viverra sollicitudin, enim mi pharetra felis, non
-            dictum mi risus sed erat. Cras pretium luctus arcu, nec facilisis
-            sapien pretium at. Quisque faucibus lacus ut sollicitudin ultricies.
-            Pellentesque sed justo scelerisque, laoreet ex vel, feugiat sapien.
-            Curabitur convallis, ligula vitae blandit tempor, nisl mi pretium
-            diam, ut imperdiet enim justo nec velit. ellentesque sed justo
-            scelerisque, laoreet ex vel, feugiat sapien. Curabitur convallis,
-            ligula vitae blandit tempor, nisl mi pretium diam, ut imperdiet enim
-            justo nec velit.
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-            vehicula arcu vitae lacus commodo, a rutrum sem tincidunt. Integer
-            eu leo feugiat, rutrum odio ut, luctus sapien. Nulla facilisi.
-            <img
-              src="img/mr_dick_think_smoke.png"
-              class="float-start me-2 mb-2 img-fluid"
-              style="width: 40%"
-              alt="Left Image"
-            />
-            Morbi a nulla eros. Donec in justo in elit mattis luctus. Etiam
-            gravida, libero at viverra sollicitudin, enim mi pharetra felis, non
-            dictum mi risus sed erat. Cras pretium luctus arcu, nec facilisis
-            sapien pretium at. Quisque faucibus lacus ut sollicitudin ultricies.
-            Pellentesque sed justo scelerisque, laoreet ex vel, feugiat sapien.
-            Curabitur convallis, ligula vitae blandit tempor, nisl mi pretium
-            diam, ut imperdiet enim justo nec velit. ellentesque sed justo
-            scelerisque, laoreet ex vel, feugiat sapien. Curabitur convallis,
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-            vehicula arcu vitae lacus commodo, a rutrum sem tincidunt. Integer
-            eu leo feugiat, rutrum odio ut, luctus sapien. Nulla facilisi.
-            <img
-              src="img/mr_dick-front.png"
-              class="float-end me-2 mb-2 img-fluid"
-              style="width: 40%"
-              alt="Right Image"
-            />
-            Morbi a nulla eros. Donec in justo in elit mattis luctus. Etiam
-            gravida, libero at viverra sollicitudin, enim mi pharetra felis, non
-            dictum mi risus sed erat. Cras pretium luctus arcu, nec facilisis
-            sapien pretium at. Quisque faucibus lacus ut sollicitudin ultricies.
-            Pellentesque sed justo scelerisque, laoreet ex vel, feugiat sapien.
-            Curabitur convallis, ligula vitae blandit tempor, nisl mi pretium
-            diam, ut imperdiet enim justo nec velit. ellentesque sed justo
-            scelerisque, laoreet ex vel, feugiat sapien. Curabitur convallis,
-            ligula vitae blandit tempor, nisl mi pretium diam, ut imperdiet enim
-            justo nec velit. Curabitur convallis, ligula vitae blandit tempor,
-            nisl mi pretium diam, ut imperdiet enim justo nec velit. ellentesque
-            sed justo scelerisque, laoreet ex vel, feugiat sapien. Curabitur
-            convallis, ligula vitae blandit tempor, nisl mi pretium diam, ut
-            imperdiet enim justo nec velit.
-          </p>
+        <div class="stories">
+          <div>
+            <span class="image">
+              <img
+                src="img/mr_dick_loop_1.png"
+                class="img-fluid"
+                alt="Right Image"
+              />
+            </span>
+            <span>
+              <p>
+                A man with no face. <br />
+                A detective with no license. <br />
+                But he’s got a magnifying glass — and sometimes, that’s all it
+                takes. He’s digging for truth in every dumb corner of the world.
+                The story we didn’t ask for… but got anyway. <br />
+                Mr. Dick is on the case.
+              </p>
+            </span>
+          </div>
+          <div>
+            <span>
+              <p>
+                He’s got questions for this world. <br />
+                But the world’s got no answers. <br />
+                Mr. Dick lights his pipe when the truth starts burning. Follow
+                him — it’s only getting more absurd from here.
+              </p>
+            </span>
+            <span class="image">
+              <img
+                src="img/mr_dick_think_smoke.png"
+                class="img-fluid"
+                alt="Left Image"
+              />
+            </span>
+          </div>
+          <div>
+            <span class="image">
+              <img
+                src="img/mr_dick_gun.png"
+                class="img-fluid"
+                alt="Right Image"
+            /></span>
+            <span>
+              <p>
+                Mr. Dick doesn’t shoot to kill — <br />
+                he shoots to shut dumb takes down. <br />
+                No face. No mercy. Just cold, hard logic in a six-shot revolver.
+                <br />
+                If your argument is weak… run.
+              </p>
+            </span>
+          </div>
         </div>
         <!-- 🔼 NEW CONTENT ENDS HERE -->
       </div>
