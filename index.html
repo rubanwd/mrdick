@@ -141,7 +141,97 @@
       .content-overlay {
         position: relative;
         z-index: 2;
-        padding: 80px 0;
+        padding: 80px 10px;
+      }
+
+      #roadmap ul {
+        list-style-type: none;
+        padding-left: 0;
+      }
+
+      #roadmap ul li {
+        padding: 15px 0;
+        font-size: 20px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+      }
+
+      #roadmap ul li:last-child {
+        border-bottom: none;
+      }
+
+      #roadmap h2 {
+        font-size: 2.5rem;
+        margin-bottom: 40px;
+        color: #ffd700;
+      }
+
+      #benefits ul {
+        list-style-type: none;
+        padding-left: 0;
+      }
+
+      #benefits ul li {
+        padding: 15px 0;
+        font-size: 20px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+      }
+
+      #benefits ul li:last-child {
+        border-bottom: none;
+      }
+
+      #benefits h2 {
+        font-size: 2.5rem;
+        margin-bottom: 40px;
+        color: #ffd700;
+      }
+
+      .tokenomics-table td,
+      .tokenomics-table th {
+        color: #ffd700;
+        vertical-align: middle;
+        font-size: 18px;
+      }
+      .tokenomics-table tr:hover {
+        background-color: #222;
+      }
+      .accordion-button:not(.collapsed) {
+        color: #111;
+        background-color: #ffd700;
+        box-shadow: none;
+      }
+
+      .accordion-button.collapsed {
+        color: #ffd700;
+        background-color: #222;
+      }
+
+      .accordion-button:focus {
+        box-shadow: none;
+        border: none;
+      }
+
+      .accordion-body {
+        background-color: #111;
+        border-top: 1px solid #333;
+        font-size: 18px;
+      }
+      #game h2 {
+        font-size: 2.5rem;
+        color: #ffd700;
+      }
+
+      #game ul li {
+        font-size: 20px;
+        padding-left: 1.5em;
+        position: relative;
+      }
+
+      #game ul li::before {
+        content: "✔";
+        position: absolute;
+        left: 0;
+        color: #ffd700;
       }
     </style>
   </head>
@@ -152,9 +242,11 @@
         <h1 class="display-4">Detective Mr. Dick</h1>
         <p class="tagline">"IN DICK WE TRUST"</p>
         <div class="d-flex justify-content-center gap-3 flex-wrap">
-          <a href="#" class="btn btn-warning">Join Telegram</a>
+          <a href="#" class="btn btn-warning">Join X</a>
           <a href="#" class="btn btn-outline-light">Read Whitepaper</a>
           <a href="#" class="btn btn-outline-light">Get DMDick</a>
+          <a href="about.html" class="btn btn-outline-light">About Us</a>
+          <a href="gallery.html" class="btn btn-outline-light">First NFT collection</a>
         </div>
       </div>
     </header>
@@ -229,83 +321,131 @@
         <!-- 🔼 NEW CONTENT ENDS HERE -->
       </div>
     </section>
-
-    <section id="tokenomics" class="bg-dark">
-      <div class="container">
-        <h2>Tokenomics</h2>
-        <p>
-          <strong>Token Name:</strong> Detective Mr. Dick<br />
-          <strong>Symbol:</strong> DMDick<br />
-          <strong>Total Supply:</strong> 1,000,000,000
-        </p>
-
-        <table class="table table-dark tokenomics-table">
-          <thead>
-            <tr>
-              <th>Category</th>
-              <th>Percentage</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Presale</td>
-              <td>30%</td>
-            </tr>
-            <tr>
-              <td>Liquidity</td>
-              <td>30%</td>
-            </tr>
-            <tr>
-              <td>Team</td>
-              <td>10%</td>
-            </tr>
-            <tr>
-              <td>Marketing</td>
-              <td>15%</td>
-            </tr>
-            <tr>
-              <td>Community Rewards</td>
-              <td>15%</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-    </section>
-
     <section id="roadmap" class="parallax-section">
       <div class="parallax-overlay"></div>
       <div class="container content-overlay text-light">
         <h2>Roadmap</h2>
         <ul>
           <li>
-            <strong>Phase 1:</strong> Dick Appears — Launch teaser, build
-            community
+            <strong>Phase 1 – May 2025:</strong> Launch official website and
+            social media accounts. Publish Mr. Dick lore and teasers. Start
+            community-building via memes and contests.
           </li>
           <li>
-            <strong>Phase 2:</strong> Dick Hardens — Mint NFTs, drop token
+            <strong>Phase 2 – June 2025:</strong> Launch Genesis NFT collection
+            with detective-style art. Whitelist for early supporters. List on
+            Magic Eden.
           </li>
           <li>
-            <strong>Phase 3:</strong> Dick Explores — Partnerships, listings
+            <strong>Phase 3 – August 2025:</strong> Launch the $DICK memecoin on
+            Solana. Token airdrops, staking, and integration with NFT utility.
           </li>
           <li>
-            <strong>Phase 4:</strong> Dick Solves Crime — DAO, comic series,
-            more NFTs
+            <strong>Phase 4 – September 2025:</strong> List $DICK on major DEXs.
+            Begin influencer and meme collaborations. Expand global reach
+            through strategic partnerships.
           </li>
           <li>
-            <strong>Phase 5:</strong> Dick Appears — Launch teaser, build
-            community
+            <strong>Phase 5 – October 2025:</strong> Release second Mr. Dick NFT
+            series (comic-style). Community-led content via DAO voting. Global
+            expansion and meme contests.
           </li>
           <li>
-            <strong>Phase 6:</strong> Dick Hardens — Mint NFTs, drop token
+            <strong>Phase 6 – Q1 2026:</strong> Begin development of the <strong>Mr. Dick Game</strong> — an interactive, meme-fueled detective experience. NFT holders get early access, exclusive skins, and token integration.
+          </li>          
+        </ul>
+      </div>
+    </section>
+
+    <section id="benefits">
+      <div class="container content-overlay text-light">
+        <h2>Why Hold Mr. Dick?</h2>
+        <ul>
+          <li>
+            <strong>🎨 Unique NFT Art:</strong> Each piece is hand-crafted with
+            absurd detective vibes, making every NFT truly collectible and
+            meme-worthy.
           </li>
           <li>
-            <strong>Phase 7:</strong> Dick Explores — Partnerships, listings
+            <strong>💰 $DICK Token Utility:</strong> Earn rewards, vote in
+            community proposals, and unlock exclusive perks tied to holding Mr.
+            Dick NFTs.
           </li>
           <li>
-            <strong>Phase 8:</strong> Dick Solves Crime — DAO, comic series,
-            more NFTs
+            <strong>🧠 DAO Participation:</strong> Influence the story, future
+            drops, and decisions through decentralized governance powered by the
+            community.
+          </li>
+          <li>
+            <strong>🔥 Limited Editions:</strong> Genesis NFTs and early meme
+            drops will never be re-released. Early holders will always be
+            recognized.
+          </li>
+          <li>
+            <strong>🤝 Brand Collaborations:</strong> Planned partnerships with
+            creators, influencers, and brands to amplify reach and value.
+          </li>
+          <li>
+            <strong>🌍 Global Meme-Driven Growth:</strong> Designed for broad
+            international appeal with a focus on humor, virality, and community
+            engagement.
+          </li>
+          <li>
+            <strong>🎮 Mr. Dick Game Integration:</strong> Play-to-earn mechanics, exclusive NFT unlocks, and story-based gameplay. Holders get access to in-game perks and detective tools.
           </li>
         </ul>
+      </div>
+    </section>
+    <section id="tokenomics" class="bg-dark text-light py-5">
+      <div class="container">
+        <h2 class="text-center mb-4">Tokenomics</h2>
+        <p class="text-center mb-4">
+          Total Supply: <strong>1,000,000,000 $DICK</strong> — hard, firm, and
+          fixed.
+        </p>
+        <div class="table-responsive">
+          <table class="table table-dark table-bordered tokenomics-table">
+            <thead>
+              <tr>
+                <th>Category</th>
+                <th>Allocation</th>
+                <th>Details</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Liquidity</td>
+                <td>30%</td>
+                <td>For exchanges and smooth... flow.</td>
+              </tr>
+              <tr>
+                <td>Community Airdrops</td>
+                <td>20%</td>
+                <td>Rewarding early believers and meme lords.</td>
+              </tr>
+              <tr>
+                <td>Marketing & Partnerships</td>
+                <td>15%</td>
+                <td>To spread the Dick gospel far and wide.</td>
+              </tr>
+              <tr>
+                <td>Team & Advisors</td>
+                <td>15%</td>
+                <td>Locked for 12 months. No premature pumping.</td>
+              </tr>
+              <tr>
+                <td>Development</td>
+                <td>10%</td>
+                <td>Tools, features, integrations, and crimes to solve.</td>
+              </tr>
+              <tr>
+                <td>DAO Treasury</td>
+                <td>10%</td>
+                <td>For future missions chosen by the DickDAO.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
       </div>
     </section>
 
@@ -317,6 +457,143 @@
           <strong>Telegram</strong> to secure your spot!
         </p>
         <a href="#" class="btn btn-warning">Join Whitelist</a>
+      </div>
+    </section>
+
+    <section id="faq" class="bg-black text-light py-5">
+      <div class="container">
+        <h2 class="text-center mb-4">FAQ – Frequently Absurd Questions</h2>
+
+        <div class="accordion accordion-flush" id="faqAccordion">
+          <div class="accordion-item bg-dark border-0">
+            <h2 class="accordion-header" id="faqOneHeading">
+              <button
+                class="accordion-button bg-dark text-warning"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#faqOne"
+                aria-expanded="true"
+                aria-controls="faqOne"
+              >
+                What is Mr. Dick, really?
+              </button>
+            </h2>
+            <div
+              id="faqOne"
+              class="accordion-collapse collapse show"
+              aria-labelledby="faqOneHeading"
+              data-bs-parent="#faqAccordion"
+            >
+              <div class="accordion-body text-light">
+                A detective? A meme? A warning from the absurd beyond? Yes. All
+                of it. Mr. Dick is a memetic force wrapped in mystery and gold.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item bg-dark border-0">
+            <h2 class="accordion-header" id="faqTwoHeading">
+              <button
+                class="accordion-button collapsed bg-dark text-warning"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#faqTwo"
+                aria-expanded="false"
+                aria-controls="faqTwo"
+              >
+                When is the NFT mint?
+              </button>
+            </h2>
+            <div
+              id="faqTwo"
+              class="accordion-collapse collapse"
+              aria-labelledby="faqTwoHeading"
+              data-bs-parent="#faqAccordion"
+            >
+              <div class="accordion-body text-light">
+                June 2025. Prepare your wallets and your minds. Whitelist
+                details will drop in Telegram and Twitter first.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item bg-dark border-0">
+            <h2 class="accordion-header" id="faqThreeHeading">
+              <button
+                class="accordion-button collapsed bg-dark text-warning"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#faqThree"
+                aria-expanded="false"
+                aria-controls="faqThree"
+              >
+                How do I get $DICK tokens?
+              </button>
+            </h2>
+            <div
+              id="faqThree"
+              class="accordion-collapse collapse"
+              aria-labelledby="faqThreeHeading"
+              data-bs-parent="#faqAccordion"
+            >
+              <div class="accordion-body text-light">
+                Once launched (August 2025), $DICK will be available on major
+                DEXs. You can also earn it by holding NFTs, joining community
+                events, or just being memetastically awesome.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item bg-dark border-0">
+            <h2 class="accordion-header" id="faqFourHeading">
+              <button
+                class="accordion-button collapsed bg-dark text-warning"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#faqFour"
+                aria-expanded="false"
+                aria-controls="faqFour"
+              >
+                Is there a roadmap?
+              </button>
+            </h2>
+            <div
+              id="faqFour"
+              class="accordion-collapse collapse"
+              aria-labelledby="faqFourHeading"
+              data-bs-parent="#faqAccordion"
+            >
+              <div class="accordion-body text-light">
+                Oh yes. Mr. Dick doesn't wander aimlessly — check the Roadmap
+                section above for the full detective journey.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="game" class="parallax-section" style="background-image: url('img/mr-dick-game-bg.png');">
+      <div class="parallax-overlay"></div>
+      <div class="container content-overlay text-light text-center">
+        <h2 class="mb-4">🎮 Mr. Dick: The Game</h2>
+        <p class="lead mb-4">
+          Dive into a detective adventure where absurdity rules and logic is a weapon.<br />
+          Solve meme-fueled mysteries, roast dumb takes, and collect NFT-powered tools.
+        </p>
+        <div class="row justify-content-center text-start">
+          <div class="col-md-6">
+            <ul class="list-unstyled">
+              <li class="mb-3">🧠 Narrative-based detective gameplay with branching logic</li>
+              <li class="mb-3">💬 Roast battles instead of combat – outwit with words</li>
+              <li class="mb-3">🔍 Meme-satirical mysteries that only Mr. Dick can solve</li>
+              <li class="mb-3">🎨 NFT skins, tools, and exclusive cases for holders</li>
+              <li class="mb-3">👥 DAO-powered story expansions — you vote, we build</li>
+            </ul>
+          </div>
+        </div>
+        <a href="game-roadmap.html" class="btn btn-outline-warning mt-3">View Game Roadmap</a>
+        <a href="#" class="btn btn-warning mt-4">Coming Soon — Join Early Access</a>
       </div>
     </section>
 
@@ -336,7 +613,7 @@
     <div class="easter-egg" id="easterEgg">
       🕵️‍♂️ "Looks like you've found a hard clue!"
     </div>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script>
       // Easter egg popup
       document.addEventListener("keydown", function (e) {
@@ -347,5 +624,8 @@
         }
       });
     </script>
+  </body>
+</html>
+
   </body>
 </html>
