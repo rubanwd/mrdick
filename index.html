@@ -136,6 +136,17 @@
           0.7
         ); /* Change opacity here for darkness */
         z-index: 1;
+        text-align: center;
+        padding: 60px 10px;
+      }
+
+      .parallax-content {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 2;
       }
 
       .content-overlay {
@@ -186,6 +197,10 @@
         color: #ffd700;
       }
 
+      /* .tokenomics-table {
+        background-color: transparent!important;
+      } */
+
       .tokenomics-table td,
       .tokenomics-table th {
         color: #ffd700;
@@ -233,6 +248,16 @@
         left: 0;
         color: #ffd700;
       }
+      .bg-light h2 {
+        color: #000;
+      }
+      .bg-light p {
+        color: #000;
+      }
+      .tokenomics-content {
+        position: relative;
+        z-index: 222;
+      }
     </style>
   </head>
   <body>
@@ -244,7 +269,7 @@
         <div class="d-flex justify-content-center gap-3 flex-wrap">
           <a href="#" class="btn btn-warning">Join X</a>
           <a href="#" class="btn btn-outline-light">Read Whitepaper</a>
-          <a href="#" class="btn btn-outline-light">Get DMDick</a>
+          <a href="#" class="btn btn-outline-light">Get MRDICK</a>
           <a href="about.html" class="btn btn-outline-light">About Us</a>
           <a href="gallery.html" class="btn btn-outline-light">First NFT collection</a>
         </div>
@@ -337,11 +362,11 @@
             Magic Eden.
           </li>
           <li>
-            <strong>Phase 3 – August 2025:</strong> Launch the $DICK memecoin on
+            <strong>Phase 3 – August 2025:</strong> Launch the $MRDICK memecoin on
             Solana. Token airdrops, staking, and integration with NFT utility.
           </li>
           <li>
-            <strong>Phase 4 – September 2025:</strong> List $DICK on major DEXs.
+            <strong>Phase 4 – September 2025:</strong> List $MRDICK on major DEXs.
             Begin influencer and meme collaborations. Expand global reach
             through strategic partnerships.
           </li>
@@ -367,7 +392,7 @@
             meme-worthy.
           </li>
           <li>
-            <strong>💰 $DICK Token Utility:</strong> Earn rewards, vote in
+            <strong>💰 $MRDICK Token Utility:</strong> Earn rewards, vote in
             community proposals, and unlock exclusive perks tied to holding Mr.
             Dick NFTs.
           </li>
@@ -396,15 +421,21 @@
         </ul>
       </div>
     </section>
-    <section id="tokenomics" class="bg-dark text-light py-5">
-      <div class="container">
+    <section id="tokenomics" class="parallax-section" style="background-image: url('img/coin.jpg');">
+      <div class="parallax-overlay" style=" background-color: rgba(
+        0,
+        0,
+        0,
+        0.8
+      );"></div>
+      <div class="container tokenomics-content">
         <h2 class="text-center mb-4">Tokenomics</h2>
         <p class="text-center mb-4">
-          Total Supply: <strong>1,000,000,000 $DICK</strong> — hard, firm, and
+          Total Supply: <strong>1,000,000,000 $MRDICK</strong> — hard, firm, and
           fixed.
         </p>
         <div class="table-responsive">
-          <table class="table table-dark table-bordered tokenomics-table">
+          <table class="table ">
             <thead>
               <tr>
                 <th>Category</th>
@@ -449,7 +480,7 @@
       </div>
     </section>
 
-    <section id="mint" class="bg-dark">
+    <section id="mint" class="bg-light">
       <div class="container text-center">
         <h2>How to Mint</h2>
         <p>
@@ -527,7 +558,7 @@
                 aria-expanded="false"
                 aria-controls="faqThree"
               >
-                How do I get $DICK tokens?
+                How do I get $MRDICK tokens?
               </button>
             </h2>
             <div
@@ -607,7 +638,7 @@
     </section>
 
     <footer>
-      <p>&copy; 2025 DMDick NFT. All rights reserved. Don’t lose your clues.</p>
+      <p>&copy; 2025 MRDICK NFT. All rights reserved. Don’t lose your clues.</p>
     </footer>
 
     <div class="easter-egg" id="easterEgg">
