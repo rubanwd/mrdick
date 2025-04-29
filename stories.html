@@ -87,25 +87,6 @@
         width: 80%;
         height: auto;
       }
-
-      /* 🔽 Responsive for mobile */
-      @media (max-width: 768px) {
-        .stories div {
-          flex-direction: column;
-          text-align: center;
-        }
-
-        .stories div span {
-          width: 100%;
-        }
-
-        .stories div span img {
-          width: 90%;
-        }
-        .stories div span.image {
-          order: -1;
-        }
-      }
       p,
       li,
       tr {
@@ -125,6 +106,30 @@
       }
       .bg-light p {
         color: #000;
+      }
+      /* 🔽 Responsive for mobile */
+      @media (max-width: 768px) {
+        p,
+        li,
+        tr {
+          font-size: 18px;
+          line-height: 2;
+        }
+        .stories div {
+          flex-direction: column;
+          text-align: center;
+        }
+
+        .stories div span {
+          width: 100%;
+        }
+
+        .stories div span img {
+          width: 90%;
+        }
+        .stories div span.image {
+          order: -1;
+        }
       }
     </style>
   </head>
