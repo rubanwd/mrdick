@@ -295,7 +295,7 @@
           <a href="#roadmap" class="btn btn-outline-light">Roadmap</a>
           <a href="#whitelist" class="btn btn-outline-light">Whitelist</a>
           <a href="about.html" class="btn btn-outline-light">About Us</a>
-          <a href="gallery.html" class="btn btn-outline-light">Genesis NFT collection</a>
+          <!-- <a href="gallery.html" class="btn btn-outline-light">Genesis NFT collection</a> -->
         </div>
       </div>
     </header>
@@ -392,7 +392,7 @@
           <li>
             <strong>Phase 4 – September 2025:</strong> Birth of the memecoin: <strong>$MRDICK</strong> goes live on Solana.
             Token airdrops roll out, staking pools open, and NFTs unlock new powers. 
-            <a href="tokenomics.html">Learn more</a>
+            <a href="tokenomics.html">Learn more</a>.
           </li>
           <li>
             <strong>Phase 5 – October 2025:</strong> First major <strong>DEX listings</strong> for <strong>$MRDICK</strong>.
@@ -409,7 +409,7 @@
           <li>
             <strong>Phase 8 – Q1 2026:</strong> Development begins for <strong>Mr. Dick: The Game</strong> —
             an interactive, meme-fueled detective adventure. Built with branching narratives, logic-roasting puzzles, and NFT integration. 
-            The detective world starts evolving with community-driven updates.
+            The detective world starts evolving with community-driven updates. <a href="game.html">Learn more</a>.
           </li>
           <li>
             <strong>Phase 9 – Q2 2026:</strong> Alpha release of <strong>Mr. Dick: The Game</strong> exclusively for NFT holders.
@@ -633,30 +633,6 @@
       </div>
     </section>
 
-    <section id="game" class="parallax-section" style="background-image: url('img/mr-dick-game-bg.png');">
-      <div class="parallax-overlay"></div>
-      <div class="container content-overlay text-light text-center">
-        <h2 class="mb-4">🎮 Mr. Dick: The Game</h2>
-        <p class="lead mb-4">
-          Dive into a detective adventure where absurdity rules and logic is a weapon.<br />
-          Solve meme-fueled mysteries, roast dumb takes, and collect NFT-powered tools.
-        </p>
-        <div class="row justify-content-center text-start">
-          <div class="col-md-6">
-            <ul class="list-unstyled">
-              <li class="mb-3">🧠 Narrative-based detective gameplay with branching logic</li>
-              <li class="mb-3">💬 Roast battles instead of combat – outwit with words</li>
-              <li class="mb-3">🔍 Meme-satirical mysteries that only Mr. Dick can solve</li>
-              <li class="mb-3">🎨 NFT skins, tools, and exclusive cases for holders</li>
-              <li class="mb-3">👥 DAO-powered story expansions — you vote, we build</li>
-            </ul>
-          </div>
-        </div>
-        <a href="game-roadmap.html" class="btn btn-outline-warning mt-3">View Game Roadmap</a>
-        <a href="#whitelist" class="btn btn-warning mt-4">Coming Soon — Join Early Access</a>
-      </div>
-    </section>
-
     <section id="community">
       <div class="container text-center">
         <h2>Community</h2>
@@ -675,18 +651,34 @@
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script>
+      // Cooldown between submissions
       let cooldown = false;
       
+      // Validation for Solana wallet
       function isValidSolanaAddress(input) {
         const solanaAddressRegex = /^[1-9A-HJ-NP-Za-km-z]{32,44}$/;
         return solanaAddressRegex.test(input);
       }
       
+      // Get stored submitted addresses from localStorage
+      function getSubmittedWallets() {
+        return JSON.parse(localStorage.getItem('submittedWallets') || '[]');
+      }
+      
+      // Save submitted wallet to localStorage
+      function saveSubmittedWallet(wallet) {
+        const wallets = getSubmittedWallets();
+        wallets.push(wallet);
+        localStorage.setItem('submittedWallets', JSON.stringify(wallets));
+      }
+      
+      // Main validation function
       function validateForm() {
         const inputEl = document.getElementById('whitelistInput');
         const input = inputEl.value.trim();
         const errorEl = document.getElementById('inputError');
         const successEl = document.getElementById('whitelistMessage');
+        const submittedWallets = getSubmittedWallets();
       
         if (cooldown) {
           errorEl.innerText = "⏳ Please wait before submitting again.";
@@ -699,26 +691,37 @@
           errorEl.innerText = "❌ Please enter a valid Solana wallet address.";
           errorEl.style.display = 'block';
           successEl.style.display = 'none';
-      
           setTimeout(() => {
             errorEl.style.display = 'none';
             inputEl.value = '';
           }, 5000);
           return false;
-        } else {
-          errorEl.style.display = 'none';
-          successEl.style.display = 'block';
-          cooldown = true; // Start cooldown
-          setTimeout(() => {
-            successEl.style.display = 'none';
-            cooldown = false; // End cooldown
-          }, 60000); // 60 seconds cooldown
-          return true;
         }
+      
+        if (submittedWallets.includes(input)) {
+          errorEl.innerText = "❌ This wallet address has already been submitted.";
+          errorEl.style.display = 'block';
+          successEl.style.display = 'none';
+          setTimeout(() => {
+            errorEl.style.display = 'none';
+          }, 5000);
+          return false;
+        }
+      
+        // If valid and not duplicate
+        errorEl.style.display = 'none';
+        successEl.style.display = 'block';
+        saveSubmittedWallet(input);
+        cooldown = true; // start cooldown
+      
+        setTimeout(() => {
+          successEl.style.display = 'none';
+          cooldown = false; // end cooldown
+        }, 60000); // 60 seconds cooldown
+      
+        return true; // Allow form submit
       }
       </script>
-      
-      
       
   </body>
 </html>
