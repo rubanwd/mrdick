@@ -3,6 +3,26 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta name="description" content="Detective Mr. Dick is a meme-powered NFT project blending absurdity and noir vibes. Launching on Magic Eden – June 2025.">
+    <meta name="keywords" content="Mr. Dick, NFT, meme coin, Solana, Magic Eden, NFT game, DAO, web3 project, detective NFT, MrDick NFT">
+    <meta name="author" content="MRDICK NFT Team">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Detective Mr. Dick – NFT Collection on Solana">
+    <meta property="og:description" content="A noir meme NFT legend launching June 21, 2025. Join the absurd revolution.">
+    <meta property="og:image" content="https://mrdk.xyz/img/genesis.jpg">
+    <meta property="og:url" content="https://mrdk.xyz">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Detective Mr. Dick – NFT Collection on Solana">
+    <meta name="twitter:description" content="A noir meme NFT legend launching June 21, 2025. Join the absurd revolution.">
+    <meta name="twitter:image" content="https://mrdk.xyz/img/genesis.jpg">
+
+
     <title>Detective Mr. Dick - NFT Launch</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
@@ -93,6 +113,30 @@
       .stories div span img {
         width: 80%;
         height: auto;
+      }
+
+
+      .stories > div:not(:last-child) {
+        position: relative;
+        margin-bottom: 40px;
+        padding-bottom: 40px;
+      }
+
+      .stories > div:not(:last-child)::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 10%;
+        width: 80%;
+        height: 2px;
+        background: repeating-linear-gradient(
+          to right,
+          #444,
+          #444 5px,
+          transparent 5px,
+          transparent 10px
+        );
+        opacity: 0.6;
       }
 
     
@@ -257,10 +301,10 @@
       .align-center {
         text-align: center;
       }
-      .whitelist-image {
+      .mint-image {
         padding: 40px 20px 10px;
       }
-      .whitelist-image img {
+      .mint-image img {
         width: 100%;
         max-width: 500px;
       }
@@ -296,363 +340,337 @@
     <header class="hero">
       <div class="container">
         <a href="index.html">
-          <img src="img/logo-dick.png" alt="Mr. Dick Logo" height="250" />
+          <img src="img/logo-dick.png" alt="Detective Mr. Dick logo - faceless noir detective emblem" height="250" />
         </a>
         <h1 class="display-4">Detective Mr. Dick</h1>
         <p class="tagline">"IN DICK WE TRUST"</p>
-        <div class="d-flex justify-content-center gap-3 flex-wrap">
-          <a href="https://x.com/MrDickNFTmeme" target="_blank" class="btn btn-warning">Follow</a>
-          <a href="#roadmap" class="btn btn-outline-light">Roadmap</a>
-          <a href="#whitelist" class="btn btn-outline-light">Whitelist</a>
-          <a href="about.html" class="btn btn-outline-light">About Us</a>
-          <!-- <a href="gallery.html" class="btn btn-outline-light">Genesis NFT collection</a> -->
-        </div>
+        <nav aria-label="Main navigation">
+          <div class="d-flex justify-content-center gap-3 flex-wrap">
+            <a href="https://x.com/MrDickNFTmeme" target="_blank" class="btn btn-warning">Follow</a>
+            <a href="#roadmap" class="btn btn-outline-light">Roadmap</a>
+            <a href="#mint-soon" class="btn btn-outline-light">Mint</a>
+            <a href="about.html" class="btn btn-outline-light">About Us</a>
+            <!-- <a href="gallery.html" class="btn btn-outline-light">Genesis NFT collection</a> -->
+          </div>
+        </nav>
+
       </div>
     </header>
-
-    <section id="about" class="about">
-      <div class="container">
-        <h2 class="align-center">About Mister Dick</h2>
-        <p class="align-center">
-          When the world gets more absurd by the minute — he shows up. Alone.
-          Eyeless. A legend. Mr. Dick looks at the chaos and says: “Something’s
-          off. Or maybe everything’s exactly right — which is even worse.”
-          <br />
-          Follow the Dick.
-        </p>
-
-        <!-- 🔽 NEW CONTENT STARTS HERE -->
-        <div class="stories">
-          <div>
-            <span class="image">
-              <img
-                src="img/mr_dick_loop_1.png"
-                class="img-fluid"
-                alt="Right Image"
-              />
-            </span>
-            <span>
-              <p>
-                A man with no face. <br />
-                A detective with no license. <br />
-                But he’s got a magnifying glass — and sometimes, that’s all it
-                takes. He’s digging for truth in every dumb corner of the world.
-                The story we didn’t ask for… but got anyway. <br />
-                Mr. Dick is on the case.
-              </p>
-            </span>
-          </div>
-          <div>
-            <span>
-              <p>
-                He’s got questions for this world. <br />
-                But the world’s got no answers. <br />
-                Mr. Dick lights his pipe when the truth starts burning. Follow
-                him — it’s only getting more absurd from here.
-              </p>
-            </span>
-            <span class="image">
-              <img
-                src="img/mr_dick_think_smoke.png"
-                class="img-fluid"
-                alt="Left Image"
-              />
-            </span>
-          </div>
-          <div>
-            <span class="image">
-              <img
-                src="img/mr_dick_gun.png"
-                class="img-fluid"
-                alt="Right Image"
-            /></span>
-            <span>
-              <p>
-                Mr. Dick doesn’t shoot to kill — <br />
-                he shoots to shut dumb takes down. <br />
-                No face. No mercy. Just cold, hard logic in a six-shot revolver.
-                <br />
-                If your argument is weak… run.
-              </p>
-            </span>
-          </div>
-        </div>
-        <div class="align-center">
-          <a href="stories.html" class="btn btn-outline-warning mt-3">More Stories</a>
-        </div>
-      </div>
-    </section>
-    <section id="roadmap" class="parallax-section">
-      <div class="parallax-overlay"></div>
-      <div class="container content-overlay text-light">
-        <h2>Roadmap</h2>
-        <ul>
-          <li>
-            <strong>Phase 1 – May 2025:</strong> Launch of the official website. 
-            Socials go live. Teaser drops begin. Absurdity officially unleashed.
-          </li>
-          <li>
-            <strong>Phase 2 – June 2025:</strong> Genesis NFT collection launches with full noir-detective drip.
-            Early supporters whitelist, first mint happens, listings on <strong>Magic Eden</strong> kick off.
-          </li>
-          <li>
-            <strong>Phase 3 – July 2025:</strong> Second NFT listing: additional noir collectibles for the expanding Mr. Dickverse.
-            Comic-strip sneak peeks and secret NFT auctions begin.
-          </li>
-          <li>
-            <strong>Phase 4 – September 2025:</strong> Birth of the memecoin: <strong>$MRDICK</strong> goes live on Solana.
-            Token airdrops roll out, staking pools open, and NFTs unlock new powers. 
-            <a href="tokenomics.html">Learn more</a>.
-          </li>
-          <li>
-            <strong>Phase 5 – October 2025:</strong> First major <strong>DEX listings</strong> for <strong>$MRDICK</strong>.
-            Meme influencers join the case. Detective Twitter raids start storming the feeds. Community lore deepens.
-          </li>
-          <li>
-            <strong>Phase 6 – November 2025:</strong> Launch of the second major NFT drop: <em>Mr. Dick: Case Files</em>.
-            Comic-panel styled collectibles. DAO begins its reign of ridiculousness: users vote on new storylines & missions.
-          </li>
-          <li>
-            <strong>Phase 7 – December 2025:</strong> Expansion of <strong>$MRDICK utility:</strong> 
-            DAO staking starts, meme bounties roll out, access to <em>classified absurd lore</em> unlocked for holders.
-          </li>
-          <li>
-            <strong>Phase 8 – Q1 2026:</strong> Development begins for <strong>Mr. Dick: The Game</strong> —
-            an interactive, meme-fueled detective adventure. Built with branching narratives, logic-roasting puzzles, and NFT integration. 
-            The detective world starts evolving with community-driven updates. <a href="game.html">Learn more</a>.
-          </li>
-          <li>
-            <strong>Phase 9 – Q2 2026:</strong> Alpha release of <strong>Mr. Dick: The Game</strong> exclusively for NFT holders.
-            Unlock rare detective skins, token-gated missions, and access to hidden absurd cases. Beta opens to public memes later.
-          </li>
-          <li>
-            <strong>Ongoing – Game World Expansion:</strong> The universe of <strong>Mr. Dick: The Game</strong> continuously evolves:
-            new cases, absurd mysteries, meme events, and storyline expansions roll out quarterly. DAO members shape the world's future.
-          </li>
-          <li>
-            <strong>Ongoing – Every 100 days:</strong> A new batch of 10 NFT comic issues featuring Mr. Dick 
-            will be listed. Expect more ridiculous cases, detective parodies, and secret lore.
-          </li>
-        </ul>
-      </div>
-    </section>    
-    
-    <section id="benefits">
-      <div class="container content-overlay text-light">
-        <h2>Why Hold Mr. Dick?</h2>
-        <ul>
-          <li>
-            <strong>🕵️ Early Access & Whitelist Perks:</strong> Holders are first in line for all major drops — 
-            whitelists for new NFT listings, early access to <em>Mr. Dick: The Game</em> alpha, and classified project updates.
-          </li>
-          <li>
-            <strong>🎨 Genesis NFT Prestige:</strong> Own a piece of the original absurdity. Genesis holders receive special badges,
-            airdrops, future comic collectibles, and exclusive rewards throughout the project's evolution.
-          </li>
-          <li>
-            <strong>💰 $MRDICK Token Utility:</strong> Stake your NFTs to earn $MRDICK tokens, unlock absurd detective missions, 
-            access secret DAO lore files, and influence the game's world development. $MRDICK fuels everything — from meme events to in-game powers.
-          </li>
-          <li>
-            <strong>🧠 DAO Governance:</strong> Mr. Dick isn't solving mysteries alone — the community votes on future storylines, 
-            new NFT drops, partner collabs, game updates, and quarterly lore expansions.
-          </li>
-          <li>
-            <strong>🎮 Deep Game Integration:</strong> Your NFTs aren’t just collectibles — they’re tools inside <em>Mr. Dick: The Game</em>. 
-            Unlock exclusive skins, secret missions, and token-based upgrades. The game evolves, and so do your NFT powers.
-          </li>
-          <li>
-            <strong>📖 Quarterly Comic NFT Drops:</strong> Every 100 days, 10 new absurd Mr. Dick comic NFTs are released. 
-            Holders get first dibs on secret detective stories, hidden missions, and bonus rewards tied to the comics.
-          </li>
-          <li>
-            <strong>🔥 Meme-Driven Growth:</strong> Memes aren't marketing — they’re a movement. Viral storytelling, strategic collabs, 
-            and cultural moments will drive global expansion.
-          </li>
-          <li>
-            <strong>🤝 Collaborations & Cultural Expansion:</strong> Influencer partnerships, community-powered marketing, 
-            and meme-fueled campaigns will cement Mr. Dick as a cultural icon in Web3.
-          </li>
-          <li>
-            <strong>📦 Ongoing Ecosystem Rewards:</strong> Holding Mr. Dick NFTs means lifetime access to evolving benefits — 
-            airdrops, merch drops, whitelist passes, live events, exclusive tournaments, and more absurdity to come.
-          </li>
-        </ul>
-      </div>
-    </section>      
-
-    <!-- <section id="mint" class="bg-light">
-      <div class="container text-center">
-        <h2>How to Mint</h2>
-        <p>
-          Before launch: <strong>Join the whitelist</strong> &
-          <strong>Telegram</strong> to secure your spot!
-        </p>
-        <a href="#" class="btn btn-warning">Join Whitelist</a>
-      </div>
-    </section> -->
-
-    <section id="whitelist" class="bg-dark text-light py-5">
-      <div class="container text-center">
-        <h2 class="mb-4">Join the Whitelist</h2>
-        <p class="mb-4">
-          Early supporters get first access to the NFT mint. Drop your wallet address or email below to secure your spot.
-        </p>
-    
-        <form id="whitelistForm" action="https://docs.google.com/forms/d/e/1FAIpQLSdl7OcY2qGFu6P02ddhO5Qo5kpqXIMMrmQ9V87xY5UQ8te4qg/formResponse" method="POST" target="hidden_iframe" onsubmit="return validateForm();">
-          <div class="row justify-content-center">
-            <div class="col-md-6 mb-3">
-              <input
-                type="text"
-                name="entry.1490184053"
-                id="whitelistInput"
-                class="form-control form-control-lg"
-                placeholder="Enter your wallet address or email"
-                required
-              />
-              <div id="inputError" class="text-danger mt-2" style="display: none;">❌ Invalid wallet address or email.</div>
+    <main>
+      <section id="about" class="about" aria-label="About Mr. Dick">
+        <div class="container">
+          <h2 class="align-center">About Mister Dick</h2>
+          <p class="align-center">
+            When the world gets more absurd by the minute — he shows up. Alone.
+            Eyeless. A legend. Mr. Dick looks at the chaos and says: “Something’s
+            off. Or maybe everything’s exactly right — which is even worse.”
+            <br />
+            Follow the Dick.
+          </p>
+  
+          <!-- 🔽 NEW CONTENT STARTS HERE -->
+          <div class="stories">
+            <div>
+              <span class="image">
+                <img
+                  src="img/mr_dick_loop_1.png"
+                  class="img-fluid"
+                  alt="Mr. Dick with magnifying glass, looping expression in noir-style art"
+                />
+              </span>
+              <span>
+                <p>
+                  A man with no face. <br />
+                  A detective with no license. <br />
+                  But he’s got a magnifying glass — and sometimes, that’s all it
+                  takes. He’s digging for truth in every dumb corner of the world.
+                  The story we didn’t ask for… but got anyway. <br />
+                  Mr. Dick is on the case.
+                </p>
+              </span>
             </div>
-            <div class="col-md-3 mb-3">
-              <button type="submit" class="btn btn-warning w-100">Join Now</button>
+            <div>
+              <span>
+                <p>
+                  He’s got questions for this world. <br />
+                  But the world’s got no answers. <br />
+                  Mr. Dick lights his pipe when the truth starts burning. Follow
+                  him — it’s only getting more absurd from here.
+                </p>
+              </span>
+              <span class="image">
+                <img
+                  src="img/mr_dick_think_smoke.png"
+                  class="img-fluid"
+                  alt="Mr. Dick thinking and smoking a pipe, lost in absurd thoughts"
+                />
+              </span>
+            </div>
+            <div>
+              <span class="image">
+                <img
+                  src="img/mr_dick_gun.png"
+                  class="img-fluid"
+                  alt="Mr. Dick holding a revolver, ready to shut down dumb takes with logic"
+              /></span>
+              <span>
+                <p>
+                  Mr. Dick doesn’t shoot to kill — <br />
+                  he shoots to shut dumb takes down. <br />
+                  No face. No mercy. Just cold, hard logic in a six-shot revolver.
+                  <br />
+                  If your argument is weak… run.
+                </p>
+              </span>
             </div>
           </div>
-        </form>
-    
-        <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"></iframe>
-    
-        <div id="whitelistMessage" class="text-success mt-3" style="display: none;">
-          ✅ You’re whitelisted! Stay tuned for the mint.
+          <div class="align-center">
+            <a href="stories.html" class="btn btn-outline-warning mt-3">More Stories</a>
+          </div>
         </div>
-    
-        <div class="whitelist-image mt-4">
-          <img src="img/genesis.jpg" alt="Whitelist Mr. Dick" class="img-fluid" />
+      </section>
+      <section id="roadmap" class="parallax-section" aria-label="Roadmap Mr. Dick">
+        <div class="parallax-overlay"></div>
+        <div class="container content-overlay text-light">
+          <h2>Roadmap</h2>
+          <ul>
+            <li>
+              <strong>Phase 1 – May 2025:</strong> Launch of the official website. 
+              Socials go live. Teaser drops begin. Absurdity officially unleashed.
+            </li>
+            <li>
+              <strong>Phase 2 – June 2025:</strong> Genesis NFT Collection launches on <strong>Magic Eden</strong>.
+              1,000 absurd faces go public. First mints, early collector perks, and community hype takes off.
+            </li>
+            <li>
+              <strong>Phase 3 – July 2025:</strong> Second NFT wave hits. New collectibles drop into the growing Mr. Dickverse.
+              Private auctions, limited comic previews, and experimental mint formats.
+            </li>
+            <li>
+              <strong>Phase 4 – September 2025:</strong> $MRDICK launches on Solana.
+              Token utility begins. Airdrops, staking, and meme-powered mechanics roll out. 
+              <a href="tokenomics.html">Learn more</a>.
+            </li>
+            <li>
+              <strong>Phase 5 – October 2025:</strong> Major <strong>DEX listings</strong> for $MRDICK.
+              Meme influencers jump in. Twitter/X raids ignite. Community lore gets deeper and weirder.
+            </li>
+            <li>
+              <strong>Phase 6 – November 2025:</strong> Second major NFT drop: <em>Mr. Dick: Case Files</em>.
+              Comic-panel NFTs go live. Community begins voting on storylines through DAO.
+            </li>
+            <li>
+              <strong>Phase 7 – December 2025:</strong> Meme bounties. DAO staking. Secret lore unlocked for holders.
+              Utility expands across NFTs and tokens — the Dickverse gets real.
+            </li>
+            <li>
+              <strong>Phase 8 – Q1 2026:</strong> Development starts on <strong>Mr. Dick: The Game</strong> —
+              an interactive, absurdist detective game with NFT roles, puzzles, and community-crafted chaos.
+              <a href="game.html">Learn more</a>.
+            </li>
+            <li>
+              <strong>Phase 9 – Q2 2026:</strong> Alpha launch of <strong>Mr. Dick: The Game</strong> for NFT holders.
+              Rare skins, token-gated missions, and early access to the weirdest game Web3 has seen.
+            </li>
+            <li>
+              <strong>Ongoing – The Absurdverse Grows:</strong> Quarterly game updates. Lore expansions. New missions. 
+              DAO votes shape future cases, drops, and madness.
+            </li>
+            <li>
+              <strong>Ongoing – Every 100 Days:</strong> 10 new comic NFTs arrive with exclusive stories, Easter eggs, and detective lore.
+              Collected. Minted. Worshipped.
+            </li>
+          </ul>
         </div>
-      </div>
-    </section> 
-
-    <section id="faq" class="bg-black text-light py-5">
-      <div class="container">
-        <h2 class="text-center mb-4">FAQ – Frequently Absurd Questions</h2>
-
-        <div class="accordion accordion-flush" id="faqAccordion">
-          <div class="accordion-item bg-dark border-0">
-            <h2 class="accordion-header" id="faqOneHeading">
-              <button
-                class="accordion-button bg-dark text-warning"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#faqOne"
-                aria-expanded="true"
-                aria-controls="faqOne"
+      </section>       
+      
+      <section id="benefits" aria-label="Benefits Mr. Dick">
+        <div class="container content-overlay text-light">
+          <h2>Why Hold Mr. Dick?</h2>
+          <ul>
+            <li>
+              <strong>🕵️ Priority Access to Future Mints:</strong> Holders get early access to every upcoming drop — 
+              from new NFT collections to rare detective case files and secret DAO perks.
+            </li>
+            <li>
+              <strong>🎨 Genesis Prestige:</strong> Owning a Genesis NFT puts you at the top of the chain — exclusive airdrops, collector badges, and OG rewards forever.
+            </li>
+            <li>
+              <strong>💰 Power of $MRDICK:</strong> Stake NFTs to earn $MRDICK tokens, unlock classified content, 
+              vote on absurd storylines, and influence the world of Mr. Dick from within.
+            </li>
+            <li>
+              <strong>🧠 Community-Driven Chaos:</strong> Join the DAO, vote on the next wild arc, and help shape this detective noirverse. Your voice matters (kinda).
+            </li>
+            <li>
+              <strong>🎮 In-Game Utility:</strong> NFTs become tools in <em>Mr. Dick: The Game</em>. Use them to unlock rare skins, token boosts, hidden missions, and clue-hunting mayhem.
+            </li>
+            <li>
+              <strong>📖 Comic Drop Cycles:</strong> Every 100 days, we drop new absurd comic NFTs. 
+              Get access first, uncover hidden lore, and flex your detective collection.
+            </li>
+            <li>
+              <strong>🔥 Meme Fuel:</strong> We're not just making NFTs — we’re building a meme-powered brand.
+              The bigger the absurdity, the louder the impact.
+            </li>
+            <li>
+              <strong>🤝 Web3 Collaborations:</strong> Strategic partnerships, crossover events, and meme ops with other projects will keep Mr. Dick center stage.
+            </li>
+            <li>
+              <strong>📦 Long-Term Holder Perks:</strong> Expect airdrops, merch, VIP access, IRL events, mystery missions, and utility that evolves with the project.
+            </li>
+          </ul>
+        </div>
+      </section>         
+  
+      <section id="mint-soon" class="bg-dark text-light py-5" aria-label="Mint MRDICK">
+        <div class="container content-overlay text-center">
+          <h2 class="mb-4">Mint Goes Live: June 21, 2025</h2>
+          <p class="mb-4">
+            The Genesis Collection of Detective Mr. Dick drops on <strong>Magic Eden</strong>. 
+            1,000 noir-style NFTs. 10 absurd faces. One faceless legend.
+          </p>
+          <p class="mb-4">
+            Set your reminders. Follow us on Twitter/X and join Discord so you don’t miss the madness.
+          </p>
+      
+          <div class="d-flex justify-content-center gap-3 flex-wrap mb-4">
+            <a href="https://x.com/MrDickNFTmeme" class="btn btn-warning" target="_blank">Follow on Twitter/X</a>
+            <a href="https://discord.gg/Zzn5WMpM" class="btn btn-outline-light" target="_blank">Join Discord</a>
+          </div>
+      
+          <div class="mint-image mt-4">
+            <img src="img/genesis.jpg" alt="Parallax background image of Mr. Dick’s noir silhouette profile" class="img-fluid" />
+          </div>
+        </div>
+      </section>    
+  
+      <section id="faq" class="bg-black text-light py-5" aria-label="Questions Mr. Dick">
+        <div class="container">
+          <h2 class="text-center mb-4">FAQ – Frequently Absurd Questions</h2>
+      
+          <div class="accordion accordion-flush" id="faqAccordion">
+            <div class="accordion-item bg-dark border-0">
+              <h2 class="accordion-header" id="faqOneHeading">
+                <button
+                  class="accordion-button bg-dark text-warning"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#faqOne"
+                  aria-expanded="true"
+                  aria-controls="faqOne"
+                >
+                  What is Mr. Dick, really?
+                </button>
+              </h2>
+              <div
+                id="faqOne"
+                class="accordion-collapse collapse show"
+                aria-labelledby="faqOneHeading"
+                data-bs-parent="#faqAccordion"
               >
-                What is Mr. Dick, really?
-              </button>
-            </h2>
-            <div
-              id="faqOne"
-              class="accordion-collapse collapse show"
-              aria-labelledby="faqOneHeading"
-              data-bs-parent="#faqAccordion"
-            >
-              <div class="accordion-body text-light">
-                A detective? A meme? A warning from the absurd beyond? Yes. All
-                of it. Mr. Dick is a memetic force wrapped in mystery and gold.
+                <div class="accordion-body text-light">
+                  A detective? A meme? A faceless force against internet stupidity? Yes.
+                  All of the above. Mr. Dick is a chaotic good wrapped in noir gold.
+                </div>
               </div>
             </div>
-          </div>
-
-          <div class="accordion-item bg-dark border-0">
-            <h2 class="accordion-header" id="faqTwoHeading">
-              <button
-                class="accordion-button collapsed bg-dark text-warning"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#faqTwo"
-                aria-expanded="false"
-                aria-controls="faqTwo"
+      
+            <div class="accordion-item bg-dark border-0">
+              <h2 class="accordion-header" id="faqTwoHeading">
+                <button
+                  class="accordion-button collapsed bg-dark text-warning"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#faqTwo"
+                  aria-expanded="false"
+                  aria-controls="faqTwo"
+                >
+                  When can I mint?
+                </button>
+              </h2>
+              <div
+                id="faqTwo"
+                class="accordion-collapse collapse"
+                aria-labelledby="faqTwoHeading"
+                data-bs-parent="#faqAccordion"
               >
-                When is the NFT mint?
-              </button>
-            </h2>
-            <div
-              id="faqTwo"
-              class="accordion-collapse collapse"
-              aria-labelledby="faqTwoHeading"
-              data-bs-parent="#faqAccordion"
-            >
-              <div class="accordion-body text-light">
-                June 2025. Prepare your wallets and your minds. Whitelist
-                details will drop in Discord and Twitter (X) first.
+                <div class="accordion-body text-light">
+                  The first mint goes live on June 21, 2025 via Magic Eden. Follow our Twitter/X and Discord
+                  to catch drops, limited auctions, and future collections.
+                </div>
               </div>
             </div>
-          </div>
-
-          <div class="accordion-item bg-dark border-0">
-            <h2 class="accordion-header" id="faqThreeHeading">
-              <button
-                class="accordion-button collapsed bg-dark text-warning"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#faqThree"
-                aria-expanded="false"
-                aria-controls="faqThree"
+      
+            <div class="accordion-item bg-dark border-0">
+              <h2 class="accordion-header" id="faqThreeHeading">
+                <button
+                  class="accordion-button collapsed bg-dark text-warning"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#faqThree"
+                  aria-expanded="false"
+                  aria-controls="faqThree"
+                >
+                  How do I get $MRDICK tokens?
+                </button>
+              </h2>
+              <div
+                id="faqThree"
+                class="accordion-collapse collapse"
+                aria-labelledby="faqThreeHeading"
+                data-bs-parent="#faqAccordion"
               >
-                How do I get $MRDICK tokens?
-              </button>
-            </h2>
-            <div
-              id="faqThree"
-              class="accordion-collapse collapse"
-              aria-labelledby="faqThreeHeading"
-              data-bs-parent="#faqAccordion"
-            >
-              <div class="accordion-body text-light">
-                Once launched (August 2025), $MRDICK will be available on major
-                DEXs. You can also earn it by holding NFTs, joining community
-                events, or just being memetastically awesome.
+                <div class="accordion-body text-light">
+                  $MRDICK launches in September 2025. You can earn it by holding NFTs, staking, 
+                  completing absurd quests, and surviving our meme raids.
+                </div>
               </div>
             </div>
-          </div>
-
-          <div class="accordion-item bg-dark border-0">
-            <h2 class="accordion-header" id="faqFourHeading">
-              <button
-                class="accordion-button collapsed bg-dark text-warning"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#faqFour"
-                aria-expanded="false"
-                aria-controls="faqFour"
+      
+            <div class="accordion-item bg-dark border-0">
+              <h2 class="accordion-header" id="faqFourHeading">
+                <button
+                  class="accordion-button collapsed bg-dark text-warning"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#faqFour"
+                  aria-expanded="false"
+                  aria-controls="faqFour"
+                >
+                  Is there a roadmap?
+                </button>
+              </h2>
+              <div
+                id="faqFour"
+                class="accordion-collapse collapse"
+                aria-labelledby="faqFourHeading"
+                data-bs-parent="#faqAccordion"
               >
-                Is there a roadmap?
-              </button>
-            </h2>
-            <div
-              id="faqFour"
-              class="accordion-collapse collapse"
-              aria-labelledby="faqFourHeading"
-              data-bs-parent="#faqAccordion"
-            >
-              <div class="accordion-body text-light">
-                Oh yes. Mr. Dick doesn't wander aimlessly — check the Roadmap
-                section above for the full detective journey.
+                <div class="accordion-body text-light">
+                  Of course. Mr. Dick doesn’t just shoot in the dark — 
+                  scroll up to see the full detective plan and how deep the absurdity goes.
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>    
+  
+      <section id="community">
+        <div class="container text-center">
+          <h2>Community</h2>
+          <a href="https://discord.gg/Zzn5WMpM" class="me-3" target="_blank">Discord</a>
+          <a href="https://x.com/MrDickNFTmeme" class="me-3" target="_blank">Twitter (X)</a>
+          <a href="#">Docs</a>
+        </div>
+      </section>
 
-    <section id="community">
-      <div class="container text-center">
-        <h2>Community</h2>
-        <a href="https://discord.gg/Zzn5WMpM" class="me-3" target="_blank">Discord</a>
-        <a href="https://x.com/MrDickNFTmeme" class="me-3" target="_blank">Twitter (X)</a>
-        <a href="#">Docs</a>
-      </div>
-    </section>
+    </main>
 
-    <footer>
+    
+
+    <footer role="contentinfo">
       <p>&copy; 2025 MRDICK NFT. All rights reserved. Don’t lose your clues.</p>
     </footer>
 
@@ -660,79 +678,6 @@
       🕵️‍♂️ "Looks like you've found a hard clue!"
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script>
-      // Cooldown between submissions
-      let cooldown = false;
-      
-      // Validation for Solana wallet
-      function isValidSolanaAddress(input) {
-        const solanaAddressRegex = /^[1-9A-HJ-NP-Za-km-z]{32,44}$/;
-        return solanaAddressRegex.test(input);
-      }
-      
-      // Get stored submitted addresses from localStorage
-      function getSubmittedWallets() {
-        return JSON.parse(localStorage.getItem('submittedWallets') || '[]');
-      }
-      
-      // Save submitted wallet to localStorage
-      function saveSubmittedWallet(wallet) {
-        const wallets = getSubmittedWallets();
-        wallets.push(wallet);
-        localStorage.setItem('submittedWallets', JSON.stringify(wallets));
-      }
-      
-      // Main validation function
-      function validateForm() {
-        const inputEl = document.getElementById('whitelistInput');
-        const input = inputEl.value.trim();
-        const errorEl = document.getElementById('inputError');
-        const successEl = document.getElementById('whitelistMessage');
-        const submittedWallets = getSubmittedWallets();
-      
-        if (cooldown) {
-          errorEl.innerText = "⏳ Please wait before submitting again.";
-          errorEl.style.display = 'block';
-          setTimeout(() => errorEl.style.display = 'none', 5000);
-          return false;
-        }
-      
-        if (!isValidSolanaAddress(input)) {
-          errorEl.innerText = "❌ Please enter a valid Solana wallet address.";
-          errorEl.style.display = 'block';
-          successEl.style.display = 'none';
-          setTimeout(() => {
-            errorEl.style.display = 'none';
-            inputEl.value = '';
-          }, 5000);
-          return false;
-        }
-      
-        if (submittedWallets.includes(input)) {
-          errorEl.innerText = "❌ This wallet address has already been submitted.";
-          errorEl.style.display = 'block';
-          successEl.style.display = 'none';
-          setTimeout(() => {
-            errorEl.style.display = 'none';
-          }, 5000);
-          return false;
-        }
-      
-        // If valid and not duplicate
-        errorEl.style.display = 'none';
-        successEl.style.display = 'block';
-        saveSubmittedWallet(input);
-        cooldown = true; // start cooldown
-      
-        setTimeout(() => {
-          successEl.style.display = 'none';
-          cooldown = false; // end cooldown
-        }, 60000); // 60 seconds cooldown
-      
-        return true; // Allow form submit
-      }
-      </script>
-      
   </body>
 </html>
   </body>

@@ -87,6 +87,29 @@
         width: 80%;
         height: auto;
       }
+
+      .stories > div:not(:last-child) {
+        position: relative;
+        margin-bottom: 40px;
+        padding-bottom: 40px;
+      }
+
+      .stories > div:not(:last-child)::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 10%;
+        width: 80%;
+        height: 2px;
+        background: repeating-linear-gradient(
+          to right,
+          #444,
+          #444 5px,
+          transparent 5px,
+          transparent 10px
+        );
+        opacity: 0.6;
+      }
       p,
       li,
       tr {
@@ -106,6 +129,14 @@
       }
       .bg-light p {
         color: #000;
+      }
+
+      .mint-image {
+        padding: 40px 20px 10px;
+      }
+      .mint-image img {
+        width: 100%;
+        max-width: 500px;
       }
       /* 🔽 Responsive for mobile */
       @media (max-width: 768px) {
@@ -140,9 +171,18 @@
           <img src="img/logo-dick.png" alt="Mr. Dick Logo" height="250" />
         </a>
         <h1 class="display-4">Detective Mr. Dick</h1>
-        <p class="tagline">"IN DICK WE TRUST"</p>
+        <p class="tagline">"We read the Dick"</p>
         <div class="d-flex justify-content-center gap-3 flex-wrap">
-          <a href="index.html" class="btn btn-warning">← Back to Main</a>
+          <a
+            href="https://x.com/MrDickNFTmeme"
+            target="_blank"
+            class="btn btn-warning"
+            >Follow</a
+          >
+          <a href="index.html#roadmap" class="btn btn-outline-light">Roadmap</a>
+          <a href="#mint-soon" class="btn btn-outline-light">Mint</a>
+          <a href="index.html" class="btn btn-outline-light">Main</a>
+          <!-- <a href="gallery.html" class="btn btn-outline-light">Genesis NFT collection</a> -->
         </div>
       </div>
     </header>
@@ -156,25 +196,20 @@
           <div>
             <span class="image">
               <img
-                src="img/logo-dick.png"
+                src="img/mr-dick-profile.png"
                 class="img-fluid"
                 alt="Right Image"
-              />
-            </span>
+            /></span>
             <span>
               <h4>
-                He doesn’t speak much. Because the facts speak loud enough.
+                He saw it coming.<br />
+                He just didn’t expect it to be that dumb.
               </h4>
               <p>
-                Mr. Dick stands in silence — trenchcoat pressed, glasses on,
-                judgment loaded.<br />
-                He’s seen enough today:<br />
-                🧠 0<br />
-                📢 100<br />
-                And not a single clue in sight.<br />
-                When everyone’s shouting their truth…<br />
-                sometimes the smartest guy in the room says nothing.<br />
-                #MrDick #SilentButCertain #JudgingYouGently
+                Mr. Dick doesn’t need to look you in the eyes.<br />
+                One sideways glance — and the case is cracked.<br />
+                Silence is his superpower.<br />
+                #MrDick #SideEyeOfJustice #DetectiveEnergy
               </p>
             </span>
           </div>
@@ -206,23 +241,29 @@
           <div>
             <span class="image">
               <img
-                src="img/mr-dick-profile.png"
+                src="img/logo-dick.png"
                 class="img-fluid"
                 alt="Right Image"
-            /></span>
+              />
+            </span>
             <span>
               <h4>
-                He saw it coming.<br />
-                He just didn’t expect it to be that dumb.
+                He doesn’t speak much. Because the facts speak loud enough.
               </h4>
               <p>
-                Mr. Dick doesn’t need to look you in the eyes.<br />
-                One sideways glance — and the case is cracked.<br />
-                Silence is his superpower.<br />
-                #MrDick #SideEyeOfJustice #DetectiveEnergy
+                Mr. Dick stands in silence — trenchcoat pressed, glasses on,
+                judgment loaded.<br />
+                He’s seen enough today:<br />
+                🧠 0<br />
+                📢 100<br />
+                And not a single clue in sight.<br />
+                When everyone’s shouting their truth…<br />
+                sometimes the smartest guy in the room says nothing.<br />
+                #MrDick #SilentButCertain #JudgingYouGently
               </p>
             </span>
           </div>
+
           <div>
             <span>
               <h4>“Trust me, bro” isn’t a source.</h4>
@@ -328,35 +369,40 @@
       </div>
     </section>
 
-    <section id="whitelist" class="bg-dark text-light py-5">
-      <div class="container text-center">
-        <h2 class="mb-4">Join the Whitelist</h2>
+    <section id="mint-soon" class="bg-dark text-light py-5">
+      <div class="container content-overlay text-center">
+        <h2 class="mb-4">Mint Goes Live: June 21, 2025</h2>
         <p class="mb-4">
-          Early supporters get first access to the NFT mint. Drop your wallet or
-          email below to secure your spot.
+          The Genesis Collection of Detective Mr. Dick drops on
+          <strong>Magic Eden</strong>. 1,000 noir-style NFTs. 10 absurd faces.
+          One faceless legend.
         </p>
-        <form id="whitelistForm" class="row justify-content-center">
-          <div class="col-md-6 mb-3">
-            <input
-              type="text"
-              id="whitelistInput"
-              class="form-control form-control-lg"
-              placeholder="Enter your wallet address or email"
-              required
-            />
-          </div>
-          <div class="col-md-3 mb-3">
-            <button type="submit" class="btn btn-warning w-100">
-              Join Now
-            </button>
-          </div>
-        </form>
-        <div
-          id="whitelistMessage"
-          class="text-success mt-3"
-          style="display: none"
-        >
-          ✅ You’re whitelisted! Stay tuned for the mint.
+        <p class="mb-4">
+          Set your reminders. Follow us on Twitter/X and join Discord so you
+          don’t miss the madness.
+        </p>
+
+        <div class="d-flex justify-content-center gap-3 flex-wrap mb-4">
+          <a
+            href="https://x.com/MrDickNFTmeme"
+            class="btn btn-warning"
+            target="_blank"
+            >Follow on Twitter/X</a
+          >
+          <a
+            href="https://discord.gg/Zzn5WMpM"
+            class="btn btn-outline-light"
+            target="_blank"
+            >Join Discord</a
+          >
+        </div>
+
+        <div class="mint-image mt-4">
+          <img
+            src="img/genesis.jpg"
+            alt="Genesis NFT Mr. Dick"
+            class="img-fluid"
+          />
         </div>
       </div>
     </section>
@@ -365,7 +411,7 @@
       <div class="container text-center">
         <h2>Community</h2>
         <a href="#" class="me-3">Telegram</a>
-        <a href="#" class="me-3">Twitter</a>
+        <a href="#" class="me-3">Twitter/X</a>
         <a href="#">Docs</a>
       </div>
     </section>

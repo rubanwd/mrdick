@@ -173,6 +173,14 @@
         background-color: rgba(255, 255, 255, 0.05);
     }
 
+    .mint-image {
+        padding: 40px 20px 10px;
+      }
+      .mint-image img {
+        width: 100%;
+        max-width: 500px;
+      }
+
     @media (max-width: 768px) {
         p,
         li,
@@ -204,12 +212,21 @@
           <img src="img/logo-dick.png" alt="Mr. Dick Logo" height="250" />
         </a>
         <h1 class="display-4">Detective Mr. Dick</h1>
-        <p class="tagline">"IN DICK WE TRUST"</p>
+        <p class="tagline">"IN DICK WE INVEST"</p>
         <div class="d-flex justify-content-center gap-3 flex-wrap">
-            <a href="index.html" class="btn btn-warning">← Back to Main</a>
-          </div>
+          <a
+            href="https://x.com/MrDickNFTmeme"
+            target="_blank"
+            class="btn btn-warning"
+            >Follow</a
+          >
+          <a href="index.html#roadmap" class="btn btn-outline-light">Roadmap</a>
+          <a href="index.html#mint-soon" class="btn btn-outline-light">Mint</a>
+          <a href="index.html" class="btn btn-outline-light">Main</a>
+          <!-- <a href="gallery.html" class="btn btn-outline-light">Genesis NFT collection</a> -->
+        </div>
       </div>
-    </header>  
+    </header>
     <section id="tokenomics" class="parallax-section" style="background-image: url('img/coin.jpg');">
       <div class="parallax-overlay" style=" background-color: rgba(
         0,
@@ -268,37 +285,33 @@
         </div>
       </div>
     </section>
-    <section id="whitelist" class="bg-dark text-light py-5">
+    <section id="mint-soon" class="bg-dark text-light py-5">
       <div class="container text-center">
-        <h2 class="mb-4">Join the Whitelist</h2>
+        <h2 class="mb-4">Mint Goes Live: June 21, 2025</h2>
         <p class="mb-4">
-          Early supporters get first access to the NFT mint. Drop your wallet or email below to secure your spot.
+          The Genesis Collection of Detective Mr. Dick drops on <strong>Magic Eden</strong>. 
+          1,000 noir-style NFTs. 10 absurd faces. One faceless legend.
         </p>
-        <form id="whitelistForm" class="row justify-content-center">
-          <div class="col-md-6 mb-3">
-            <input
-              type="text"
-              id="whitelistInput"
-              class="form-control form-control-lg"
-              placeholder="Enter your wallet address or email"
-              required
-            />
-          </div>
-          <div class="col-md-3 mb-3">
-            <button type="submit" class="btn btn-warning w-100">Join Now</button>
-          </div>
-        </form>
-        <div id="whitelistMessage" class="text-success mt-3" style="display: none;">
-          ✅ You’re whitelisted! Stay tuned for the mint.
+        <p class="mb-4">
+          Set your reminders. Follow us on Twitter/X and join Discord so you don’t miss the madness.
+        </p>
+    
+        <div class="d-flex justify-content-center gap-3 flex-wrap mb-4">
+          <a href="https://x.com/MrDickNFTmeme" class="btn btn-warning" target="_blank">Follow on Twitter/X</a>
+          <a href="https://discord.gg/Zzn5WMpM" class="btn btn-outline-light" target="_blank">Join Discord</a>
+        </div>
+    
+        <div class="mint-image mt-4">
+          <img src="img/genesis.jpg" alt="Genesis NFT Mr. Dick" class="img-fluid" />
         </div>
       </div>
-    </section>    
+    </section>   
 
     <section id="community">
       <div class="container text-center">
         <h2>Community</h2>
         <a href="#" class="me-3">Telegram</a>
-        <a href="#" class="me-3">Twitter</a>
+        <a href="#" class="me-3">Twitter/X</a>
         <a href="#">Docs</a>
       </div>
     </section>
