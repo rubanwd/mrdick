@@ -22,7 +22,7 @@
 
     <!-- Open Graph -->
     <meta property="og:title" content="Detective Mr. Dick – NFT Collection on Solana">
-    <meta property="og:description" content="A noir meme NFT legend launching June 21, 2025. Join the absurd revolution.">
+    <meta property="og:description" content="A noir meme NFT legend launching June, 2025. Join the absurd revolution.">
     <meta property="og:image" content="https://mrdk.xyz/img/genesis.jpg">
     <meta property="og:url" content="https://mrdk.xyz">
     <meta property="og:type" content="website">
@@ -347,6 +347,42 @@
         }
 
       }
+      @keyframes pulse {
+        0% {
+          transform: scale(1);
+        }
+        50% {
+          transform: scale(1.15);
+        }
+        100% {
+          transform: scale(1);
+        }
+      }
+
+      .pulse-logo {
+        animation: pulse 1.5s infinite;
+        transform-origin: center;
+      }
+
+      @keyframes bounce {
+        0%, 100% {
+          transform: translateY(0);
+        }
+        30% {
+          transform: translateY(-6px);
+        }
+        50% {
+          transform: translateY(3px);
+        }
+        70% {
+          transform: translateY(-2px);
+        }
+      }
+
+      .bounce-logo {
+        animation: bounce 2s infinite;
+        transform-origin: center;
+      }
     </style>
   </head>
   <body>
@@ -359,11 +395,18 @@
         <p class="tagline">"IN DICK WE TRUST"</p>
         <nav aria-label="Main navigation">
           <div class="d-flex justify-content-center gap-3 flex-wrap">
-            <a href="https://x.com/MrDickNFTmeme" target="_blank" class="btn btn-warning">Follow</a>
+            <a href="https://x.com/MrDickNFTmeme" target="_blank" class="btn btn-warning d-inline-flex align-items-center gap-2">
+              Follow
+              <img src="img/x-logo.png" alt="X logo" width="32" height="32" class="pulse-logo" />
+            </a>
+            
             <a href="#roadmap" class="btn btn-outline-light">Roadmap</a>
             <a href="#mint-soon" class="btn btn-outline-light">Mint</a>
             <a href="about.html" class="btn btn-outline-light">About Us</a>
-            <!-- <a href="gallery.html" class="btn btn-outline-light">Genesis NFT collection</a> -->
+            <a href="https://discord.gg/Zzn5WMpM" target="_blank" class="btn btn-warning d-inline-flex align-items-center gap-2">
+              Join
+              <img src="img/discord-logo.png" alt="Discord logo" width="32" height="32" class="bounce-logo" />
+            </a>
           </div>
         </nav>
 
@@ -548,8 +591,8 @@
           </p>
       
           <div class="d-flex justify-content-center gap-3 flex-wrap mb-4">
-            <a href="https://x.com/MrDickNFTmeme" class="btn btn-warning" target="_blank">Follow on Twitter/X</a>
-            <a href="https://discord.gg/Zzn5WMpM" class="btn btn-outline-light" target="_blank">Join Discord</a>
+            <a href="https://x.com/MrDickNFTmeme" class="btn btn-warning d-inline-flex align-items-center gap-2" target="_blank">Follow <img src="img/x-logo.png" alt="X logo" width="32" height="32" class="pulse-logo" /></a>
+            <a href="https://discord.gg/Zzn5WMpM" class="btn btn-warning d-inline-flex align-items-center gap-2" target="_blank">Join Discord<img src="img/discord-logo.png" alt="Discord logo" width="32" height="32" class="bounce-logo" /></a>
           </div>
       
           <div class="mint-image mt-4">

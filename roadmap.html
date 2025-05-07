@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-X7FCN43GR5"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-X7FCN43GR5');
+    </script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta name="description" content="Detective Mr. Dick is a meme-powered NFT project blending absurdity and noir vibes. Launching on Magic Eden – June 2025.">
+    <meta name="keywords" content="Mr. Dick, NFT, meme coin, Solana, Magic Eden, NFT game, DAO, web3 project, detective NFT, MrDick NFT">
+    <meta name="author" content="MRDICK NFT Team">
+    <meta name="robots" content="index, follow">
+
+    
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Detective Mr. Dick – NFT Collection on Solana">
+    <meta property="og:description" content="A noir meme NFT legend launching June, 2025. Join the absurd revolution.">
+    <meta property="og:image" content="https://mrdk.xyz/img/genesis.jpg">
+    <meta property="og:url" content="https://mrdk.xyz">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Detective Mr. Dick – NFT Collection on Solana">
+    <meta name="twitter:description" content="A noir meme NFT legend launching June 21, 2025. Join the absurd revolution.">
+    <meta name="twitter:image" content="https://mrdk.xyz/img/genesis.jpg">
+
+
+    <title>Detective Mr. Dick - NFT Launch</title>
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        background-color: #111;
+        color: #eee;
+        font-family: "Special Elite", monospace;
+        background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
+      }
+      header,
+      section {
+        padding: 60px 0;
+      }
+      .hero {
+        text-align: center;
+        background: linear-gradient(to bottom, #000000, #1f1f1f);
+        color: #ffd700;
+      }
+      .tagline {
+        font-size: 1.5rem;
+        margin-bottom: 20px;
+      }
+      .comic-strip {
+        max-width: 100%;
+        margin: 20px 0;
+      }
+      .tokenomics-table td,
+      .tokenomics-table th {
+        color: #fff;
+      }
+      .easter-egg {
+        display: none;
+        background: #333;
+        padding: 10px;
+        border-radius: 5px;
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        z-index: 9999;
+      }
+      .btn-warning {
+        background-color: #ffd700;
+        border: none;
+        color: #111;
+      }
+      footer {
+        background-color: #000;
+        padding: 20px 0;
+        text-align: center;
+      }
+      a {
+        color: #ffd700;
+        text-decoration: none;
+      }
+      a:hover {
+        text-decoration: underline;
+        
+      }
+      .about {
+        padding-bottom: 110px;
+      }
+      .stories {
+          padding-bottom: 60px;
+      }
+      .stories div {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 40px;
+        gap: 20px;
+      }
+
+      p,
+      li,
+      tr {
+        font-size: 20px;
+        line-height: 3;
+      }
+
+      .btn {
+        font-size: 1.25rem;
+        padding: 0.75rem 1.5rem;
+        border-radius: 0.6rem;
+      }
+      .parallax-section {
+        position: relative;
+        background-image: url("img/mr-dick-profile.png");
+        background-attachment: fixed;
+        background-position: top;
+        background-repeat: no-repeat;
+        background-size: cover;
+        min-height: 50vh;
+        overflow: hidden;
+      }
+
+      .parallax-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(
+          0,
+          0,
+          0,
+          0.7
+        ); /* Change opacity here for darkness */
+        z-index: 1;
+        text-align: center;
+        padding: 60px 10px;
+      }
+
+      .parallax-content {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 2;
+      }
+
+      .content-overlay {
+        position: relative;
+        z-index: 2;
+        padding: 80px 10px;
+      }
+
+      #roadmap ul {
+        list-style-type: none;
+        padding-left: 0;
+      }
+
+      #roadmap ul li {
+        padding: 15px 0;
+        font-size: 20px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+      }
+
+      #roadmap ul li:last-child {
+        border-bottom: none;
+      }
+
+      #roadmap h2 {
+        font-size: 2.5rem;
+        margin-bottom: 40px;
+        color: #ffd700;
+      }
+      .bg-light h2 {
+        color: #000;
+      }
+      .bg-light p {
+        color: #000;
+      }
+      .align-center {
+        text-align: center;
+      }
+      .mint-image {
+        padding: 40px 20px 10px;
+      }
+      .mint-image img {
+        width: 100%;
+        max-width: 500px;
+      }
+      /* 🔽 Responsive for mobile */
+      @media (max-width: 768px) {
+
+        p,
+        li,
+        tr {
+          font-size: 18px;
+          line-height: 2;
+        }
+
+      }
+    </style>
+  </head>
+  <body>
+    <header class="hero">
+      <div class="container">
+        <a href="index.html">
+          <img src="img/logo-dick.png" alt="Detective Mr. Dick logo - faceless noir detective emblem" height="250" />
+        </a>
+        <h1 class="display-4">Detective Mr. Dick</h1>
+        <p class="tagline">"IN DICK WE TRUST"</p>
+        <nav aria-label="Main navigation">
+          <div class="d-flex justify-content-center gap-3 flex-wrap">
+            <a href="https://x.com/MrDickNFTmeme" target="_blank" class="btn btn-warning">Follow</a>
+            <a href="#mint-soon" class="btn btn-outline-light">Mint</a>
+            <a href="about.html" class="btn btn-outline-light">About Us</a>
+            <!-- <a href="gallery.html" class="btn btn-outline-light">Genesis NFT collection</a> -->
+          </div>
+        </nav>
+
+      </div>
+    </header>
+    <main>
+      <section id="roadmap" class="parallax-section" aria-label="Roadmap Mr. Dick">
+        <div class="parallax-overlay"></div>
+        <div class="container content-overlay text-light">
+          <h2>Roadmap</h2>
+          <ul>
+            <li>
+              <strong>Phase 1 – May 2025:</strong> Launch of the official website. 
+              Socials go live. Teaser drops begin. Absurdity officially unleashed.
+            </li>
+            <li>
+              <strong>Phase 2 – June 2025:</strong> Genesis NFT Collection launches on <strong>Magic Eden</strong>.
+              1,000 absurd faces go public. First mints, early collector perks, and community hype takes off.
+            </li>
+            <li>
+              <strong>Phase 3 – July 2025:</strong> Second NFT wave hits. New collectibles drop into the growing Mr. Dickverse.
+              Private auctions, limited comic previews, and experimental mint formats.
+            </li>
+            <li>
+              <strong>Phase 4 – September 2025:</strong> $MRDICK launches on Solana.
+              Token utility begins. Airdrops, staking, and meme-powered mechanics roll out. 
+              <a href="tokenomics.html">Learn more</a>.
+            </li>
+            <li>
+              <strong>Phase 5 – October 2025:</strong> Major <strong>DEX listings</strong> for $MRDICK.
+              Meme influencers jump in. Twitter/X raids ignite. Community lore gets deeper and weirder.
+            </li>
+            <li>
+              <strong>Phase 6 – November 2025:</strong> Second major NFT drop: <em>Mr. Dick: Case Files</em>.
+              Comic-panel NFTs go live. Community begins voting on storylines through DAO.
+            </li>
+            <li>
+              <strong>Phase 7 – December 2025:</strong> Meme bounties. DAO staking. Secret lore unlocked for holders.
+              Utility expands across NFTs and tokens — the Dickverse gets real.
+            </li>
+            <li>
+              <strong>Phase 8 – Q1 2026:</strong> Development starts on <strong>Mr. Dick: The Game</strong> —
+              an interactive, absurdist detective game with NFT roles, puzzles, and community-crafted chaos.
+              <a href="game.html">Learn more</a>.
+            </li>
+            <li>
+              <strong>Phase 9 – Q2 2026:</strong> Alpha launch of <strong>Mr. Dick: The Game</strong> for NFT holders.
+              Rare skins, token-gated missions, and early access to the weirdest game Web3 has seen.
+            </li>
+            <li>
+              <strong>Ongoing – The Absurdverse Grows:</strong> Quarterly game updates. Lore expansions. New missions. 
+              DAO votes shape future cases, drops, and madness.
+            </li>
+            <li>
+              <strong>Ongoing – Every 100 Days:</strong> 10 new comic NFTs arrive with exclusive stories, Easter eggs, and detective lore.
+              Collected. Minted. Worshipped.
+            </li>
+          </ul>
+        </div>
+      </section>              
+  
+      <section id="mint-soon" class="bg-dark text-light py-5" aria-label="Mint MRDICK">
+        <div class="container content-overlay text-center">
+          <h2 class="mb-4">Minting This June</h2>
+          <p class="mb-4">
+            The Genesis Collection of <strong>Detective Mr. Dick</strong> is creeping onto <strong>Magic Eden</strong>.  
+            1,000 noir-drenched NFTs. 10 absurd expressions. One faceless legend.
+          </p>
+          <p class="mb-4">
+            The countdown has begun. Follow us on Twitter/X and jump into Discord — you won’t want to miss what’s coming.
+          </p>
+      
+          <div class="d-flex justify-content-center gap-3 flex-wrap mb-4">
+            <a href="https://x.com/MrDickNFTmeme" class="btn btn-warning" target="_blank">Follow on Twitter/X</a>
+            <a href="https://discord.gg/Zzn5WMpM" class="btn btn-outline-light" target="_blank">Join Discord</a>
+          </div>
+      
+          <div class="mint-image mt-4">
+            <img src="img/genesis.jpg" alt="Parallax background image of Mr. Dick’s noir silhouette profile" class="img-fluid" />
+          </div>
+        </div>
+      </section>         
+  
+      <section id="community">
+        <div class="container text-center">
+          <h2>Community</h2>
+          <a href="https://discord.gg/Zzn5WMpM" class="me-3" target="_blank">Discord</a>
+          <a href="https://x.com/MrDickNFTmeme" class="me-3" target="_blank">Twitter (X)</a>
+          <a href="#">Docs</a>
+        </div>
+      </section>
+    </main>
+
+    <footer role="contentinfo">
+      <p>&copy; 2025 MRDICK NFT. All rights reserved. Don’t lose your clues.</p>
+    </footer>
+
+    <div class="easter-egg" id="easterEgg">
+      🕵️‍♂️ "Looks like you've found a hard clue!"
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
+  </body>
+</html>
